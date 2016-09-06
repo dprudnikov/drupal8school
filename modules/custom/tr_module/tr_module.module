@@ -1,0 +1,20 @@
+<?php
+
+/**
+ * @file
+ */
+
+/**
+ * Implements hook_views_data().
+ */
+function tr_module_views_data() {
+  $data['views']['tr_module_text_custom_year'] = array(
+    'title' => t('Custom site area plugin'),
+    'help' => t('Provide current year + views area custom plugin.'),
+    'area' => array(
+      'id' => 'tr_module_text_custom_year',
+    ),
+  );
+
+  return $data;
+}

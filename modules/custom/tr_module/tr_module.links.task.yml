@@ -1,0 +1,19 @@
+tr_module_simple:
+  title: 'Main'
+  description: 'Description'
+  route_name: tr_module_simple
+  base_route: '<front>'
+
+tr_module_simple_form:
+  title: Form
+  description: 'Description'
+  route_name: tr_module_simple_form
+  parent_id: tr_module_simple
+
+tr_module_simple_service:
+  title: Service
+  description: 'Description'
+  route_name: tr_module_simple_service
+  parent_id: tr_module_simple
+  weight: 1
+

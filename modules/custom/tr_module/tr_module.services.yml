@@ -1,0 +1,3 @@
+services:
+  tr_module.service:
+    class: Drupal\tr_module\TrModuleService

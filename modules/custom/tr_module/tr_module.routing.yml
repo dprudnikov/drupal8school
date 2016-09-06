@@ -1,0 +1,23 @@
+tr_module_simple:
+  path: 'tr-module'
+  defaults:
+    _controller: '\Drupal\tr_module\Controller\TrModuleServiceController::simple_service'
+    _title: 'Training Module'
+  requirements:
+    _access: 'TRUE'
+
+tr_module_simple_form:
+  path: 'tr-module/form'
+  defaults:
+    _form:  '\Drupal\tr_module\Form\TrModuleSimpleForm'
+    _title: 'Simple Form API Example'
+  requirements:
+    _access: 'TRUE'
+
+tr_module_simple_service:
+  path: 'tr-module/service'
+  defaults:
+    _controller: '\Drupal\tr_module\Controller\TrModuleServiceController::simple_service'
+    _title: 'Simple Service Example'
+  requirements:
+    _access: 'TRUE'

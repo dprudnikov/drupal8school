@@ -1,0 +1,9 @@
+name: Lesson 3: Building custom module
+description: 'Drupal 8 School - Building custom module'
+type: module
+core: 8.x
+version: 1.0
+package: Custom Modules
+dependencies:
+  - block
+  - views

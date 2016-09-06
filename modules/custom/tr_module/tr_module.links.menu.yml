@@ -1,0 +1,20 @@
+tr_module_simple:
+  title: Lesson 3
+  description: Demo menu
+  route_name: tr_module_simple_service
+  parent: '<front>'
+  menu_name: main
+
+tr_module_simple_form:
+  title: Page 1
+  description: Demo menu
+  route_name: tr_module_simple_form
+  parent: tr_module_simple
+  menu_name: main
+
+tr_module_simple_service:
+  title: Page 2
+  description: Demo menu
+  route_name: tr_module_simple_service
+  parent: tr_module_simple
+  menu_name: main
