@@ -1,0 +1,6 @@
+lesson4_page:
+  title: Lesson 4
+  description: frontend API
+  route_name: lesson4_page
+  parent: '<front>'
+  menu_name: main

@@ -1,0 +1,28 @@
+<?php
+
+/**
+ * @file
+ */
+
+/**
+ * Implements hook_preprocess_page().
+ */
+function lesson4_preprocess_page(&$variables) {
+  $variables['#attached']['library'][] = 'lesson4/lesson4.library_example';
+}
+
+/**
+ * Implements hook_theme().
+ */
+function lesson4_theme($existing, $type, $theme, $path) {
+  $items = [
+    'custom_element' => [
+      'render element' => 'element',
+      'variables' => [
+        'text' => NULL,
+      ],
+    ],
+  ];
+
+  return $items;
+}

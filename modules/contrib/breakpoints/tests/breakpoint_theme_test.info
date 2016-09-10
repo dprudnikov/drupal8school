@@ -1,0 +1,13 @@
+name = Breakpoint theme test
+description = Test breakpoints provided by themes
+package = Other
+core = 8.x
+hidden = TRUE
+dependencies[] = breakpoint
+
+; Information added by drupal.org packaging script on 2013-09-30
+version = "8.x-1.1+91-dev"
+core = "8.x"
+project = "breakpoints"
+datestamp = "1380556939"
+

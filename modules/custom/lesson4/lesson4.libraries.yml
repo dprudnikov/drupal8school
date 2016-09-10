@@ -1,0 +1,9 @@
+# A simple script using jquery ui accordion.
+lesson4.library_example:
+  js:
+    js/lesson4_example.js: {}
+  dependencies:
+    - core/jquery
+  css:
+    theme:
+      css/lesson4_example.css: {}

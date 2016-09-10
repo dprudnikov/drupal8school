@@ -1,0 +1,8 @@
+lesson4_page:
+  path: 'lesson4'
+  defaults:
+    _controller: '\Drupal\lesson4\Controller\Lesson4PageController::page'
+    _title: 'Lesson 4'
+  requirements:
+    _access: 'TRUE'
+
