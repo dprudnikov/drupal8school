@@ -1,0 +1,6 @@
+name: Lesson 8: Caching, Logging and Migration
+type: module
+description: Drupal 8 School - Caching, Logging and Migration
+version: 1.0
+core: 8.x
+package: Drupal 8 School

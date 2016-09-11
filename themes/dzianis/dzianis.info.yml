@@ -4,3 +4,5 @@ base theme: bartik
 description: 'Drupal 8 School custom theme.'
 package: Drupal 8 School
 core: 8.x
+libraries:
+  - dzianis/global-styling-library

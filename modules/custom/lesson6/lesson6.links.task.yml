@@ -1,0 +1,22 @@
+# Define the 'local' links for the module
+
+currency.settings_tab:
+  route_name: lesson6.currency_settings
+  title: Settings
+  base_route: lesson6.currency_settings
+
+currency.view:
+  route_name: entity.currency.canonical
+  base_route: entity.currency.canonical
+  title: View
+
+currency.page_edit:
+  route_name: entity.currency.edit_form
+  base_route: entity.currency.canonical
+  title: Edit
+
+currency.delete_confirm:
+  route_name:  entity.currency.delete_form
+  base_route:  entity.currency.canonical
+  title: Delete
+  weight: 10

@@ -1,0 +1,11 @@
+# All action links for this module
+
+lesson6.currency_add:
+  # Which route will be called by the link
+  route_name: lesson6.currency_add
+  title: 'Add Currency'
+
+  # Where will the link appear, defined by route name.
+  appears_on:
+    - entity.currency.collection
+    - entity.currency.canonical

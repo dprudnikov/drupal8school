@@ -1,0 +1,10 @@
+'delete currency entity':
+  title: Delete entity content.
+'add currency entity':
+  title: Add entity content
+'view currency entity':
+  title: View entity content
+'edit currency entity':
+  title: Edit entity content
+'administer currency entity':
+  title: Administer settings

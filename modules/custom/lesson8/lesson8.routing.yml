@@ -1,0 +1,7 @@
+lesson8.logging_cache:
+  path: '/lesson8'
+  defaults:
+    _form:  '\Drupal\lesson8\Form\LoggingCache'
+    _title: 'Logging&cache'
+  requirements:
+    _access: 'TRUE'

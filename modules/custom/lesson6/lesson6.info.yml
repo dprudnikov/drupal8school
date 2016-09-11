@@ -1,0 +1,9 @@
+name: Lesson 6: Entity API
+type: module
+description: Drupal 8 School - Entity API
+package: Drupal 8 School
+core: 8.x
+version: 1.0
+dependencies:
+  - options
+  - node

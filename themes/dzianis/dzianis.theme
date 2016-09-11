@@ -28,7 +28,6 @@ function dzianis_theme_suggestions_page_title_alter(array &$suggestions, array $
   }
 }
 
-
 /**
  * Implements hook_theme_suggestions_HOOK_alter().
  */
@@ -39,20 +38,5 @@ function dzianis_theme_suggestions_node_alter(array &$suggestions, array $variab
   }
   else {
     $suggestions[] = 'node__odd';
-  }
-}
-
-/**
- * Implements hook_preprocess_HOOK() for node.html.twig.
- */
-function dzianis_preprocess_node(&$variables) {
-  $node = \Drupal::routeMatch()->getParameter('node');
-  if (!empty($node)) {
-    if ($node->id() % 2 == 0) {
-      $variables['attributes']['class'][] = 'node-even';
-    }
-    else {
-      $variables['attributes']['class'][] = 'node-odd';
-    }
   }
 }

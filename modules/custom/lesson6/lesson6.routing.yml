@@ -1,0 +1,58 @@
+# This file brings everything together. Very nifty!
+
+# Route name can be used in several places; e.g. links, redirects, and local
+# actions.
+entity.currency.canonical:
+  path: '/currency/{currency}'
+  defaults:
+  # Calls the view controller, defined in the annotation of the currency entity
+    _entity_view: 'currency'
+    _title: 'Currency Content'
+  requirements:
+  # Calls the access controller of the entity, $operation 'view'
+    _entity_access: 'currency.view'
+
+entity.currency.collection:
+  path: '/currency/list'
+  defaults:
+  # Calls the list controller, defined in the annotation of the currency entity.
+    _entity_list: 'currency'
+    _title: 'Currency List'
+  requirements:
+  # Checks for permission directly.
+    _permission: 'view currency entity'
+
+lesson6.currency_add:
+  path: '/currency/add'
+  defaults:
+  # Calls the form.add controller, defined in the currency entity.
+    _entity_form: currency.add
+    _title: 'Add Currency'
+  requirements:
+    _entity_create_access: 'currency'
+
+entity.currency.edit_form:
+  path: '/currency/{currency}/edit'
+  defaults:
+  # Calls the form.edit controller, defined in the currency entity.
+    _entity_form: currency.edit
+    _title: 'Edit Currency'
+  requirements:
+    _entity_access: 'currency.edit'
+
+entity.currency.delete_form:
+  path: '/currency/{currency}/delete'
+  defaults:
+    # Calls the form.delete controller, defined in the currency entity.
+    _entity_form: currency.delete
+    _title: 'Delete Currency'
+  requirements:
+    _entity_access: 'currency.delete'
+
+lesson6.currency_settings:
+  path: 'admin/structure/currency_settings'
+  defaults:
+    _form: '\Drupal\lesson6\Form\CurrencySettingsForm'
+    _title: 'Currency Settings'
+  requirements:
+    _permission: 'administer currency entity'

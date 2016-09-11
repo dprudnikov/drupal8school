@@ -1,0 +1,12 @@
+# Define the menu links for this module
+
+entity.currency.collection:
+  title: 'Content Entity Example: Currencys Listing'
+  route_name: entity.currency.collection
+  description: 'List Currencys'
+  weight: 10
+currency.admin.structure.settings:
+  title: Currency Settings
+  description: 'Configure Currency entity'
+  route_name:  lesson6.currency_settings
+  parent: system.admin_structure
