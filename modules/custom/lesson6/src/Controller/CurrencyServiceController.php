@@ -14,7 +14,7 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
 class CurrencyServiceController extends ControllerBase {
 
   /**
-   * @var \Drupal\tr_module\TrModuleService
+   * @var \Drupal\lesson6\TrModuleService
    */
   protected $service;
 

@@ -1,0 +1,8 @@
+command:
+    admin_toolbar:
+        default:
+            description: 'Greet someone'
+            arguments:
+                name: 'Who do you want to greet?'
+            options:
+                yell: 'If set, the task will yell in uppercase letters'

@@ -1,7 +1,11 @@
-# This file brings everything together. Very nifty!
+lesson6.currencies:
+  path: '/currencies'
+  defaults:
+    _controller: '\Drupal\lesson6\Controller\CurrencyServiceController::simple_service'
+    _title: 'Currencies Page'
+  requirements:
+    _access: 'TRUE'
 
-# Route name can be used in several places; e.g. links, redirects, and local
-# actions.
 entity.currency.canonical:
   path: '/currency/{currency}'
   defaults:

@@ -14,11 +14,11 @@ use Drupal\Core\Form\FormStateInterface;
  * Provides a CustomModuleExampleBlock plugin.
  *
  * @Block(
- *   id = "lesson6_example_block",
+ *   id = "lesson6_currency_block",
  *   admin_label = @Translation("Custom module block example"),
  * )
  */
-class TrModuleExampleBlock extends BlockBase {
+class CurrencyBlock extends BlockBase {
 
   /**
    * {@inheritdoc}
