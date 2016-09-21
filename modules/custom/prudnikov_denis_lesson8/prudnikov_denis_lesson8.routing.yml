@@ -1,0 +1,7 @@
+prudnikov_denis_lesson8.logging_cache:
+  path: '/prudnikov_denis_lesson8'
+  defaults:
+    _form:  '\Drupal\prudnikov_denis_lesson8\Form\LoggingCache'
+    _title: 'Logging&cache'
+  requirements:
+    _access: 'TRUE'

@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\lesson8\Form;
+namespace Drupal\prudnikov_denis_lesson8\Form;
 
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
@@ -49,14 +49,14 @@ class LoggingCache extends FormBase {
    * {@inheritdoc}
    */
   public function getFormId() {
-    return 'lesson8_form';
+    return 'prudnikov_denis_lesson8_form';
   }
 
   /**
    * {@inheritdoc}
    */
   public function getCidCache(){
-    return 'lesson8:test_cache';
+    return 'prudnikov_denis_lesson8:test_cache';
   }
 
   /**
@@ -82,7 +82,7 @@ class LoggingCache extends FormBase {
    */
   public function log_cacheFormSubmit(array &$form, FormStateInterface $form_state) {
     $title = $form_state->getValue('title');
-    \Drupal::service('lesson8.service_log_multiple_channels')->logOtherChannels($title);
+    \Drupal::service('prudnikov_denis_lesson8.service_log_multiple_channels')->logOtherChannels($title);
     \Drupal::cache('data')->set($this->getCidCache(), $title);
     $form_state->setRebuild(TRUE);
   }

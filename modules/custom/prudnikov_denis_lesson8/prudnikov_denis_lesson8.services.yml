@@ -1,0 +1,5 @@
+services:
+  prudnikov_denis_lesson8.service_log_multiple_channels:
+    class: Drupal\prudnikov_denis_lesson8\Lesson8Service
+    arguments: ['@logger.factory']
+
